@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel ="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <body>
+    <header>
+        <!--Title-->
+      <h1>Weather Dashboard</h1>
+    </header>
+     <!--Search-->
+      <div class="container-fluid mainCon">
+        <div class="row">
+          <div class="col-12 col-md-3 col-xl-3 colOne">
+            <label>City Name:</label>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control searchText" placeholder="Marysville">
+              <div class="input-group-append searchBtnPar">
+                <button class="btn btn-danger search" type="button">Search</button>
+              </div>
+            </div>
+
+            <div class="container searchCity"></div>
+
+          </div>
+          <div class="col-12 col-md-9 col-xl-9 colTwo">
+             <!--Todays forcast-->
+            <div class="today">
+
+              <div class="card bg-light mb-3 " style="max-width: 940px;">
+                <h2 class="card-header currentCityName"></h2>
+                <h3 class="card-header currentDate cardDate"></h3>
+                <img class="images"/>
+                <div class="card-body currentDay">
+                </div>
+              </div>
+
+            </div>
+             <!--Next 5 days forcast-->
+            <div class="row fiveDayForecast"></div>
+
+          </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
