@@ -19,7 +19,7 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city      
 
 ## Live URL
-URL:
+URL: https://artemk2002.github.io/Weather-Dashboard/
 
 
 ## Home Page
