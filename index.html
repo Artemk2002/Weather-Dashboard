@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Weather Dashboard</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Assets/style.css"/>
+<script src="https://code.jquery.com/jquery.js"></script>
+<body>
+    <!--title-->
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <!--body-->
+    <div class="bodydisplay">
+        <!--search side container-->
+        <div class="searchfeild">
+            <h2>City Name:</h2>
+            <input type="text" class="searchText" placeholder="City Name">
+            <button class="search" type="button">Search</button>
+            <h5>Last searched citie:</h5>
+            <h5 class="lastSearch" id="historyList"> Loading...</h5>
+        </div>
+         <!--todays weather and 5 day forcast container-->
+        <div class="rightside"> 
+            <!--Todays weather card-->  
+            <div class="TodayWeather">
+                <h2 class="city">Loading...</h2>
+                <div class="today2">
+                    <div>
+                        <h3 class="temp"></h3>
+                        <h3 class="humidity"></h3>
+                        <h3 class="wind"></h3>
+                    </div>
+                    <div class="img2">
+                        <img class="icon"/>
+                    </div>
+                </div>
+            </div>
+            <div class="Forcast">    
+                <h2>5-Day Forecast</h2>
+                <!-- 5 Days Weather Forcast list here -->
+                <div class="row" id="days">
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./Assets/script.js"></script>
+</body>
+</html>
